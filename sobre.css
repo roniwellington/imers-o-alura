@@ -1,0 +1,55 @@
+.sobre {
+    padding: 2em;
+    min-height: 75vh;
+    background-image: linear-gradient(45deg,black, rgb(104, 7, 119));
+}
+
+.sobre h2{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+}
+
+.sobre p {
+    color: white;
+    margin-bottom: 2em;
+    text-indent: 2em;
+    text-align: justify;
+}
+
+.avatar {
+    float: left;
+    margin-right: 2em;
+    margin-left: 6em;
+}
+
+.avatar img {
+    border-radius: 50%;
+}
+
+@media (min-width:1200px) {
+    .sobre p {
+        color: white;
+        margin-bottom: 2em;
+        margin-right: 12em;
+        text-indent: 2em;
+        text-align: justify;
+    }
+
+    .avatar {
+        float: left;
+        margin-right: 2em;
+        margin-left: 12em;
+    
+}
+}
+
+@media (max-width: 550px) {
+    .foto {
+        width: 170px;
+        float: left;
+        margin: 0 20px 20px 0;
+    }
+}

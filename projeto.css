@@ -1,0 +1,82 @@
+
+.portfolio {
+    background-image: linear-gradient(45deg,black, rgb(104, 7, 119));
+    padding: 2em;
+    min-height: 100vh;
+   
+}
+
+.portfolio h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+    
+}
+
+
+
+.portfolio .grid {
+    display: grid;
+    gap: 2em;
+    
+    color: rgb(111, 110, 110);
+}
+
+@media (min-width: 560px) {
+    .portfolio .grid {
+    grid-template-columns: 240px 240px;
+    justify-content: center;
+    
+    }
+
+    .img-portifolio {
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 880px) {
+    .portfolio .grid {
+    grid-template-columns: repeat(3, 240px);
+    justify-content: center;
+    }
+
+ 
+}
+
+ 
+.img-portifolio {
+    height: 180px;
+    width: 240px;
+    object-fit: cover;
+    object-position: left bottom;
+    transition: transform 500ms;
+}
+
+.img-portifolio:hover {
+    transform: scale(1.1);
+}
+
+.grid-icons {
+    color: whitesmoke;
+    font-size: 5em;
+}
+
+.grid-icons a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 25px rgb(255, 6, 172);
+}
+
+@media (max-width: 550px) {
+    .portfolio .grid {
+    grid-template-columns: 240px;
+    justify-content: center;
+    
+    }
+
+    .img-portifolio {
+        padding-left: 20px;
+    }
+
+}
